@@ -1,0 +1,81 @@
+<div class="d--flex">
+  <form action="" [formGroup]="addEvent">
+    <div class="form__block d--flex justify-content--between">
+      <div class="form-content">
+        <span class="form__question">Hãy chọn lòng sớ</span>
+        <div class="d--flex form__controls">
+          <label for="godKind" class="form__item">
+            <input type="radio" formControlName="worshipType" name="worshipType" value="godKind" id="godKind">
+            <div class="btn item__content item__content--radio text--center ml-0">
+              <div class="item__title">神</div>
+              <div class="item__name">Thiên Đạo</div>
+              <div class="item__summary">Lòng sớ Tam Giáo</div>
+            </div>
+          </label>
+          <label for="manKind" class="form__item">
+            <input type="radio" formControlName="worshipType" name="worshipType" value="manKind" id="manKind">
+            <div class="btn item__content item__content--radio text--center mr-0">
+              <div class="item__title">人</div>
+              <div class="item__name">Nhơn Đạo</div>
+              <div class="item__summary">Lòng sớ Tam Trấn</div>
+            </div>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="form__block d--flex justify-content--between">
+      <div class="form-content">
+        <span class="form__question">Đàn cúng nhân</span>
+        <div class="d--flex form__controls">
+          <div class="form-field">
+            <span class="btn material-icons-round ic ic--search">search</span>
+            <input type="search" placeholder="Tìm kiếm tên đàn cúng" class="form-control form-control--search">
+          </div>
+        </div>
+        <div class="event-list">
+          <div class="month-event">
+            <div class="event__month">Tháng Giêng</div>
+            <label for="gklc0101yl" class="form__item">
+              <input type="radio" formControlName="eventName" name="eventName" value="gklc0101yl" id="gklc0101yl">
+              <div class="d--flex">
+                <div class="event__date">01</div>
+                <div class="event__name">Ngươn Đán</div>
+              </div>
+            </label>
+            <label for="gklc0109yl" class="form__item">
+              <input type="radio" formControlName="eventName" name="eventName" value="gklc0109yl" id="gklc0109yl">
+              <div class="d--flex">
+                <div class="event__date">09</div>
+                <div class="event__name">Đại Lễ Vía Đức Ngọc Hoàng Thượng Đế</div>
+              </div>
+            </label>
+            <label for="gklc0115yl" class="form__item">
+              <input type="radio" formControlName="eventName" name="eventName" value="gklc0115yl" id="gklc0115yl">
+              <div class="d--flex">
+                <div class="event__date">15</div>
+                <div class="event__name">Đại Lễ Thượng Ngươn</div>
+              </div>
+            </label>
+          </div>
+          <div class="month-event">
+            <div class="event__month">Tháng Hai</div>
+            <label for="gklc0215yl" class="form__item">
+              <input type="radio" formControlName="eventName" name="eventName" value="gklc0215yl" id="gklc0215yl">
+              <div class="d--flex">
+                <div class="event__date">15</div>
+                <div class="event__name">Đại lễ Vía Đức Thái Thượng Lão Quân</div>
+              </div>
+            </label>
+            <label for="gklc0219yl" class="form__item">
+              <input type="radio" formControlName="eventName" name="eventName" value="gklc0219yl" id="gklc0219yl">
+              <div class="d--flex">
+                <div class="event__date">19</div>
+                <div class="event__name">Đại lễ Vía Đức Phật Quan Âm</div>
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,30 @@
+<div id="nav">
+  <div class="nav__block">
+    <div class="nav__menu">
+      <div class="list">
+        <a href="" class="nav__link nav__logo">
+          <div class="list__item">
+            <img src="/assets/images/qr-code.svg" alt="" class="ic--nav">
+          </div>
+        </a>
+        <a href="" class="nav__link">
+          <div class="list__item is-active">
+            <span class="material-icons-round ic ic--nav">home</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="btn--action" class="d--flex flex-column align-items--end">
+  <div class="action-list d--flex align-items--end flex-column" *ngIf="isShowActions">
+    <a class="btn action__item d--flex align-items--center nav__link" href="/add-event?t=worship">
+      <div class="action__text d--flex align-items-center">Thêm đàn cúng</div>
+      <div class="action__ic ic material-icons-round">history_edu</div>
+    </a>
+  </div>
+  <div class="btn btn--action material-icons-round" (click)="showActions()">
+    add
+  </div>
+</div>
